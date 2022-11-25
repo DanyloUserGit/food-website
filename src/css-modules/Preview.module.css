@@ -1,0 +1,5 @@
+:root{--preview-bg: #FCFFD8;}
+.__preview__
+{
+    background-color: var(--preview-bg);
+}

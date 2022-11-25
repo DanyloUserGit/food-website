@@ -1,0 +1,42 @@
+:root
+{
+    --bg-main: #FFFFFF;
+    --color-main: #000000;
+    --height: 102px;
+    --font-main: 'PT Serif', serif;;
+    --logo-size: 48px;
+    --menu-size: 16px;
+    --header-shadow: 0px 1px 4px #000000;
+}
+.__navbar__
+{
+    background-color: var(--bg-main);
+    color: var(--color-main);
+    min-height: var(--height);
+    box-shadow: var(--header-shadow);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font-main);
+}
+.__navbar__ h1, .__menu__
+{
+    font-size: var(--logo-size);
+    margin: auto;
+}
+.__menu__
+{
+    display: flex;
+} 
+.__menu__ li
+{
+    font-size: var(--menu-size);
+    padding-left: var(--menu-size);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.__menu__ li:hover
+{
+    color: #900202;
+    text-decoration:overline;
+    cursor: pointer;
+}

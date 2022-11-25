@@ -1,0 +1,67 @@
+:root
+{
+    --header-font: 32px bold;
+    --text-font: 24px;
+    --text-opacity: 0.5;
+    --color: #000000;
+    --button-color: #F8A607;
+    --button-color-hover: #c48e22;
+    --button-width: 120px;
+    --button-height: 35.5px;
+    --button-border-radius: 10%;
+    --button-text-color: #FFFFFF;
+    --button-text-font: 18px bold;
+    --ordinaryImg-max-width: 693.86px;
+    --ordinaryImg-max-height: 378.92px;  
+    --article-height: 100vh;
+}
+.__article__
+{
+    display: flex;
+    justify-content: space-around;
+    min-height: var(--article-height);
+}
+.__ordinaryImg__, .__wrapper__
+{
+    margin: auto;
+}
+.__wrapper__ p
+{
+    margin-top: 24px;
+}
+.__article__header__
+{
+    font: var(--header-font);
+}
+.__article__text__
+{
+    font: var(--text-font);
+    opacity: var(--text-opacity);
+}
+.__button__
+{
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border-radius: var(--button-border-radius);
+    text-decoration: none;
+    cursor: pointer;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.45s;
+}
+.__button__ span
+{
+    font: var(--button-text-font);
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+.__button__:hover
+{
+    background-color: var(--button-color-hover);
+}
+.__ordinaryImg__
+{
+    width: var(--ordinaryImg-max-width);
+    height: var(--ordinaryImg-max-height);
+}

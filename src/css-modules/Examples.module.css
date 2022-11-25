@@ -1,0 +1,67 @@
+:root
+{
+    --bg-main: #F8F8F8;
+    --color-main: #000000;
+    --font-usual: 'Poppins', sans-serif;
+    --size-header: 32px;
+    --size-usual: 24px;
+    --opacity-text: 0.5;
+    --card-space: 25px;
+    --card-width: 182.5px;
+    --card-height: 226.5px;
+    --bg-card: #FFFFFF;
+    --box-shadow-card: 0px 0px 1px #000000;
+
+}
+.__examples__
+{
+    background-color: var(--bg-main);
+    color: var(--color-main);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.__paragraph__header__
+{
+    font: var(--font-usual);
+    font-size: var(--size-header);
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.__wrapper__
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.__card__
+{
+    background-color: var(--bg-card);
+    box-shadow: var(--box-shadow-card);
+    width: var(--card-width);
+    height: calc(var(--card-height) / 2);
+    text-align: center;
+}
+.__card__wrapper__
+{
+    padding-left: var(--card-space);
+}
+.__cardImage__
+{
+    width: var(--card-width);
+    height: calc(var(--card-height) / 2);
+}
+.__card__name__, .__card__description
+{
+    padding: 10px 0px;
+    font: var(--font-usual);
+    font-size: var(--size-usual);
+}
